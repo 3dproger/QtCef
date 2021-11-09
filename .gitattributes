@@ -1,2 +1,1 @@
-* linguist-vendored
-src/QtCef/cef/* linguist-detectable=false
+src/QtCef/cef/* linguist-vendored
