@@ -1,0 +1,1 @@
+For Windows x86-64 unpack app_files/windows_x86_64_msvc.zip after release build

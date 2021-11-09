@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QCefWidget" name="cefWidget" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBrowser">
+    <property name="title">
+     <string>Browser</string>
+    </property>
+    <addaction name="actionOpenLink"/>
+    <addaction name="actionReload"/>
+    <addaction name="actionBack"/>
+    <addaction name="actionCEF_Version"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuBrowser"/>
+  </widget>
+  <action name="actionReload">
+   <property name="text">
+    <string>Reload</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionBack">
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </action>
+  <action name="actionOpenLink">
+   <property name="text">
+    <string>Open link</string>
+   </property>
+  </action>
+  <action name="actionCEF_Version">
+   <property name="text">
+    <string>CEF Version</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCefWidget</class>
+   <extends>QWidget</extends>
+   <header>qcefwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
